@@ -1,0 +1,13 @@
+{% extends 'base.html' %}{% block head %}
+<link href="{{ url_for('static', filename='styles/404.css') }}" rel="stylesheet">{% endblock %} {% block content %}
+<body>
+    <div class="error-message-container">
+        <div class="row error-message">
+            <h2 class="error-heading ">404!</h2>
+            <h3 class="error-heading ">Oh no!
+                <br>It doesn't look like there are any homes here. <br> Let's take you <a style="text-decoration: none; color: red;" href="{{ url_for('main.landingPage') }}">Home</a></h3>
+            
+        </div>
+    </div>
+</body>
+{% endblock %}

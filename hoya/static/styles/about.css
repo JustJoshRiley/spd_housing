@@ -1,0 +1,307 @@
+.parallax {
+    background-image: url('https://images.pexels.com/photos/5749092/pexels-photo-5749092.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    height: 100vh;
+
+}
+
+.missionStatement {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missionStatementContainer {
+    height: auto;
+    width: auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hoya-Jumbo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HoyaJumbo p {
+    font-size: 3vh;
+    line-height: 5vh;
+    text-align: center;
+    font-family: futura;
+    font-style: normal;
+    color: #F4FCEF;
+    background-color:  rgba(0, 0, 0, 0.75);
+}
+
+.addHouseText {
+    color: #30CB00;
+    text-decoration: none;
+}
+
+.addHouseText:hover {
+    color: #3FEF0B;
+    text-decoration: underline;
+}
+
+.story-container {
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1503045666024-95470ad39b81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.no-gutter {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutter>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.story {
+    padding: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    height: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 25px;
+    background-color: rgba(29, 99, 117, 0.89);
+    font-family: futura;
+    font-style: normal;
+}
+
+.story h1 {
+    font-size: 3.5vh;
+    font-weight: 500;
+    margin-bottom: 2.5%;
+}
+
+.story p {
+    font-size: 2.5vh;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+}
+
+.story br {
+    margin: 10%;
+}
+
+.story-button {
+    height: fit-content;
+    width: max-content;
+    border-radius: 5px;
+    color: white;
+    font-size: 2vh;
+    background-color:#7D9870;
+    border: none;
+    padding: 2%;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.637), 0 8.5px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.story-button:hover {
+    transition-duration: 0.4s;
+    background-color: #4E5F46;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.637), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: rgb(255, 255, 255) !important;
+    overflow: hidden;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #005340!important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #005340 !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.form label {
+    margin-top: 8%;
+}
+
+.submit-button-form-contact {
+    background-color: yellowgreen;
+    display: block;
+}
+
+footer {
+    background-color: #263F36;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-link-container a {
+    font-weight: 700;
+    font-size: 2vh;
+    text-decoration: none;
+    background-color: transparent;
+    color: #6596a1;
+}
+
+.footer-link-container a:hover {
+    color: rgb(135, 211, 229);
+}
+
+@media only screen and (max-width : 414px) {
+    .HoyaJumbo p {
+        width: 100vw;
+        line-height: 50px;
+        font-size: 3vh;
+    }
+}
+

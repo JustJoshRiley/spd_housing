@@ -7,5 +7,4 @@ class Config(object):
 
     DEBUG = True
 
-    # MONGODB_URI = mongo uri goes here
-    # API_KEY = Zillow API key access goes here
+    MONGO_URI = os.getenv("MONGO_URI")

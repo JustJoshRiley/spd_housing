@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="modal addHouse fade" id="addHouse">
+                <div class="modal-dialog">
+                    <div class="modal-content " role="document">
+                        <div class="modal-body">
+                            <div class="row"><button class="btn" data-dismiss="modal" style="font-size: 24px; text-align: center;">X</button></div>
+                            <div class="row">
+                                <form class="modal-form listAHouse" action="{{ url_for('main.newListing') }}" method="POST">
+                                    <div class="form-container">
+                                        <h1>Tell us about your House!</h1>
+                                        <input type="text" name="address" class="question" id="address" required autocomplete="off" />
+                                        <label for="address">What's your Address?<span></span></label>
+                                        <input type="number" name="numBedrooms" class="question" id="numBedrooms" required autocomplete="off" />
+                                        <label for="numBedrooms">How many Bathrooms?<span></span></label>
+                                        <input type="number" name="numBathrooms" class="question" id="numBathrooms" required autocomplete="off" />
+                                        <label for="numBathrooms">How many Bedrooms?<span></span></label>
+                                        <input type="number" name="sqFootage" class="question" id="sqFootage" required autocomplete="off" />
+                                        <label for="sqFootage">How many Sq. Ft.?<span></span></label>
+                                        <input type="submit" value="Free Estimate!" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>{% endblock %}

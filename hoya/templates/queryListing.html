@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/queryListing.css')}}"> {% endblock %} {% block content %} {% include 'navbar.html' %}
+<div class=" top-search">
+    <div class="search-container">
+        <div class="search-box">
+            <form action="{{ url_for('main.listingsQuery') }}" method="POST">
+                <input class="search-bar" required aria-required="true" type="text" name="city" placeholder="City" name="search">
+                <input class="search-bar" required aria-required="true" type="text" name="stateCode" placeholder="State" name="search">
+                <button class="search-button" type="submit">Go!</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% include 'footer.html' %} {% endblock %}
